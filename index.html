@@ -7,18 +7,103 @@
   <title>Stellar Lumens (XLM) Conversion</title>
   <meta name="description" content="XLM pairings to know how many XLM in exchange for 1 of a store of value">
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./css/site.css">
 </head>
 
 <body>
 
-	<h1>Stellar Lumens (XLM) Conversion</h1>
-	<h2> How many XLM can you exchange for</h2>
-	<p>1 Bitcoin (BTC) = 147,346 XLM</p>
-	<p>1 Ethereum (ETH) 2,740 XLM</p>	
-	<p>1 Litecoin (LTC) = 1,173 XLM</p>
-	<p>1 US Dollar (USD) = 13 XLM</p>
+<!--
+<div class="container">
 
+	<div class="header">
+		<h1>Stellar Lumens (XLM) Conversion</h1>
+		<h2> How many XLM can you exchange for</h2>
+	</div>
+
+	<div class="BarChart">
+		<p>1 Bitcoin (BTC) = 147,346 XLM</p>
+		<div class="BarChart-bar">
+			fff
+		</div>
+
+
+		<p>1 Ethereum (ETH) = 2,740 XLM</p>	
+		<p>1 Litecoin (LTC) = 1,173 XLM</p>
+		<p>1 US Dollar (USD) = 13 XLM</p>
+	</div>
+</div>
+-->
+
+
+
+
+
+
+<div class="wrapper">
+  <div class="box header"><h1>Stellar Lumens (XLM) Conversion</h1>
+</div>
+
+  <div class="box sidebar">
+  	<h2>
+  		<p>XLM</p> 
+  		<p>🔄</p>
+  		<p>BTC</p>
+  	</h2>
+  	<div class="button">
+  		<button> Future Dropdown</button>
+  	</div>
+  </div>
+
+  <div class="box content">
+
+
+<!-- BarChart start -->
+<div class="BarChart">
+
+	<!-- BarChart row start -->
+	<div class="BarChart-row box">
+	    <div class="BarChart-rowdesc">1 Bitcoin (BTC)</div>
+	    <!-- Future consideration When calculating width of BarChart-row:
+	    	The greatest number, in this case BTC, should be set to 100% width and
+	    	displayed at the top.
+	    	Subsequent rows displayed descending order and calculated based on the
+	    	percentage of the max. -->
+	    <div class="BarChart-bar" id="btcBar" onClick="barClick(this.id)" style="width: 100%"></div>
+	</div>
+	<!-- BarChart row end -->
+	<div class="BarChart-row box">
+	    <div class="BarChart-rowdesc">1 Ethereum (ETH)</div>
+	    <div class="BarChart-bar" id="ethBar" onClick="barClick(this.id)" style="width: 30%"></div>
+	</div>
+
+	<div class="BarChart-row box">
+	    <div class="BarChart-rowdesc">1 Litecoin (LTC)</div>
+	    <div class="BarChart-bar" id="ltcBar" onClick="barClick(this.id)" style="width: 20%"></div>
+	</div>
+
+	<div class="BarChart-row box">
+	    <div class="BarChart-rowdesc"> 1 US Dollar (USD)</div>
+	    <div class="BarChart-bar" id="usdBar" onClick="barClick(this.id)" style="width: 5%"></div>
+	</div>
+
+
+
+</div>
+<!-- BarChart end -->
+  </div>
+  
+
+
+  <div class="footer">
+  	<a href="https://github.com/rjplaton/stellar-pairings">Github Repo</a>
+  	<p>
+  	<a href="http://rjplaton.com">Reuben Platon</a>
+  </p>
+  	</div>
+</div>
+
+
+  <script src="js/main.js"></script>
 
 </body>
 </html>
