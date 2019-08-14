@@ -11,57 +11,31 @@
 </head>
 
 <body>
-
-<!--
-<div class="container">
-
-	<div class="header">
-		<h1>Stellar Lumens (XLM) Conversion</h1>
-		<h2> How many XLM can you exchange for</h2>
-	</div>
-
-	<div class="BarChart">
-		<p>1 Bitcoin (BTC) = 147,346 XLM</p>
-		<div class="BarChart-bar">
-			fff
-		</div>
-
-
-		<p>1 Ethereum (ETH) = 2,740 XLM</p>	
-		<p>1 Litecoin (LTC) = 1,173 XLM</p>
-		<p>1 US Dollar (USD) = 13 XLM</p>
-	</div>
-</div>
--->
-
-
-
-
-
-
+<nav class="nav"><a href="https://rjplaton.github.io/stellar-pairings/">Stellar Pairings</a>
+</nav>
 <div class="wrapper">
-  <div class="box header"><h1>Stellar Lumens (XLM) Conversion</h1>
+  <div class="header"><h1>Stellar Lumens (XLM) Conversion</h1>
 </div>
 
-  <div class="box sidebar">
-  	<h2>
-  		<p>XLM</p> 
+  <div class="sidebar box">
+  	<h3>
+  		<p>Popular Currencies</p> 
   		<p>🔄</p>
-  		<p>BTC</p>
-  	</h2>
-  	<div class="button">
-  		<button> Future Dropdown</button>
+  		<p>XLM</p>
+  	</h3>
+  	<div class="button" onClick="console.log('You clicked the future button')">
+  		Future Button
   	</div>
   </div>
 
-  <div class="box content">
+  <div class="content">
 
 
 <!-- BarChart start -->
 <div class="BarChart">
-
+<h2>How many XLM per...</h2>
 	<!-- BarChart row start -->
-	<div class="BarChart-row box">
+	<div class="BarChart-row">
 	    <div class="BarChart-rowdesc">1 Bitcoin (BTC)</div>
 	    <!-- Future consideration When calculating width of BarChart-row:
 	    	The greatest number, in this case BTC, should be set to 100% width and
@@ -71,17 +45,17 @@
 	    <div class="BarChart-bar" id="btcBar" onClick="barClick(this.id)" style="width: 100%"></div>
 	</div>
 	<!-- BarChart row end -->
-	<div class="BarChart-row box">
+	<div class="BarChart-row">
 	    <div class="BarChart-rowdesc">1 Ethereum (ETH)</div>
 	    <div class="BarChart-bar" id="ethBar" onClick="barClick(this.id)" style="width: 30%"></div>
 	</div>
 
-	<div class="BarChart-row box">
+	<div class="BarChart-row">
 	    <div class="BarChart-rowdesc">1 Litecoin (LTC)</div>
 	    <div class="BarChart-bar" id="ltcBar" onClick="barClick(this.id)" style="width: 20%"></div>
 	</div>
 
-	<div class="BarChart-row box">
+	<div class="BarChart-row">
 	    <div class="BarChart-rowdesc"> 1 US Dollar (USD)</div>
 	    <div class="BarChart-bar" id="usdBar" onClick="barClick(this.id)" style="width: 5%"></div>
 	</div>
