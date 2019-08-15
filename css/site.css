@@ -68,6 +68,7 @@ h3 {
 
 .wrapper {
   color: #444;
+  width: 100%;
 }
 
 .wrapper {
@@ -80,7 +81,7 @@ h3 {
    "footer"
 }
 
-@media only screen and (min-width: 500px)  {
+@media only screen and (min-width: 550px)  {
 	.wrapper {
 		grid-template-columns: 30% auto;
     	grid-template-areas:
@@ -90,7 +91,7 @@ h3 {
 	}
 }
 
-@media only screen and (min-width: 600px)   {
+@media only screen and (min-width: 650px)   {
 	.wrapper {
   		grid-gap: 20px;
         grid-template-columns: 30% auto 120px;
